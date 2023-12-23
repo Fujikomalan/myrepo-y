@@ -1,0 +1,16 @@
+---
+name: "y-job"
+
+on:
+  push:
+    branches:
+      - main
+    
+jobs:
+    
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "y-job first step."
+        run: echo "y-job"
