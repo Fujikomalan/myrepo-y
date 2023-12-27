@@ -2,13 +2,15 @@
 name: "y-job"
 
 on:
+  repository_dispatch:
+    types: [ deployment-event ]
   push:
     branches:
-      - main
-    
+      - main  
 jobs:
     
   build:
+
     runs-on: ubuntu-latest
 
     steps:
